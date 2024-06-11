@@ -20,7 +20,7 @@
             <img src="#" alt="Logo">
         </div>
         <div class="col-lg-5 text-light text-center">
-            <h6>LojaVirutal - (EM DESENVOLVIMENTO)</h6>
+            <h6>LojaVirutal - CodeBrew - (Em desenvolvimento)</h6>
         </div>
         <div class="col-lg-2">
             <a href="{{ url('/register') }}" class="btn btn-dark border-light text-light">Registre-se</a>
