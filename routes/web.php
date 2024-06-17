@@ -9,9 +9,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard/products', [ProductsController::class, 'index'])->name('dashboard.products');
+Route::get('/', [ProductsController::class, 'getProducts']);
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
+Route::get('/welcome', [ProductsController::class, 'getProducts']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

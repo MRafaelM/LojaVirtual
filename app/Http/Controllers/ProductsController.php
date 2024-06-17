@@ -48,6 +48,23 @@ class ProductsController extends Controller
         ]);
     }
 
+    public function getProducts()
+    {
+        return view('welcome', [
+            // select name, price from products
+            'products' => Product::select('name', 'price')->get()
+        ]);
+    }
+
+    public function getProductsAdmin()
+    {
+        return view('dashboard', [
+            // select name, price from products
+            'products' => Product::select('name', 'price')->get()
+        ]);
+    }
+
+
     public function edit($id)
     {
         //find é o método que faz select * from products where id= ?
@@ -80,8 +97,3 @@ class ProductsController extends Controller
 excluído com sucesso!');
     }
 }
-
-
-
-
-
